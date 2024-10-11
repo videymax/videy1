@@ -1,0 +1,34 @@
+<center>
+<video id="myVideo" class="wp-block-video" controls src="https://cdn.videy.co/eaV8IHXJ.mp4"></video>
+</center>script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Ad Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     
+    <div id="ad-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Create the ad box container
+            const adContainer = document.getElementById('ad-container');
+
+            // Create the iframe for the ad
+            const iframe = document.createElement('iframe');
+            iframe.src = 'https://topbestof.com/other/top-5-nurturing-health-and-wellness-hospitals-in-india/?utm_source=Fazi&utm_medium=Umair&utm_id=Umair'; // Replace with your ad URL
+            iframe.width = '300'; // Set width to 300 pixels
+            iframe.height = '500'; // Set height to 500 pixels
+            iframe.frameBorder = '0';
+            iframe.allowFullscreen = true;
+
+            // Append the iframe to the ad container
+            adContainer.appendChild(iframe);
+        });
+    </script>
+</body>
+</html>
