@@ -1,0 +1,17 @@
+ <center>
+<video id="myVideo" class="wp-block-video" controls src="https://cdn.videy.co/XlWmvfjd.mp4"></video>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var videoElement = document.getElementById('myVideo');
+    var hasRedirected = false; // Variable to track if the redirection has happened
+
+    videoElement.addEventListener('play', function () {
+      if (!hasRedirected) {
+        hasRedirected = true; // Mark that the redirection has happened
+        videoElement.pause(); // Pause the video before redirection
+        window.open("https://topbestof.com/other/top-5-nurturing-health-and-wellness-hospitals-in-india/?utm_source=Fazi&utm_medium=Umair&utm_id=Umair", "_blank"); // Open the URL in a new tab
+      }
+    });
+  });
+</script>
+</center>
